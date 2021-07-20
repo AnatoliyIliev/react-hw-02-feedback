@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Feedback/Feedback.module.scss"],"names":[],"mappings":"AAAA,wBACI,mBAAoB,CACpB,UAAW,CACX,yBAA0B","file":"main.4aaa1dd6.chunk.css","sourcesContent":[".button{\n    display: inline-flex;\n    margin: 5px;\n    text-transform: capitalize;\n}"]}
