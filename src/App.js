@@ -1,6 +1,13 @@
+import Feedback from './components/Feedback'
+
 
 function App() {
-  return 1
+  return (
+    <div>
+      <Feedback/>
+
+    </div>
+  )
 }
 
 export default App;
