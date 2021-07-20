@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-hw-02-feedback"]=this["webpackJsonpreact-hw-02-feedback"]||[]).push([[0],{9:function(e,t,c){"use strict";c.r(t);var n=c(0),r=c.n(n),a=c(3),s=c.n(a);var o=function(){return 1},d=c(2);s.a.render(Object(d.jsx)(r.a.StrictMode,{children:Object(d.jsx)(o,{})}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.6cde218c.chunk.js.map
