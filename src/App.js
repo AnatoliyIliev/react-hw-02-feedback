@@ -1,7 +1,6 @@
-import React, {Component} from "react";
-import styles from './components/FeedbackOptions/FeedbackOptions.module.scss'
-
-
+import React, { Component } from "react";
+import Statistics from './components/Statistics'
+import FeedbackOptions from './components/FeedbackOptions'
 class App extends Component {
   state = {
         good: 0,
@@ -42,34 +41,18 @@ class App extends Component {
     render() {
         return (
             <div>
-                <h1>Please leave feedback</h1>
-                <div>
-                    <button className={styles.button} type="button" onClick={this.countGoodFeedback}> Good</button>
-                    <button className={styles.button} type="button" onClick={this.countNeutralFeedback}> Neutral</button>
-                    <button className={styles.button} type="button" onClick={this.countBadFeedback}> Bad</button>
-                </div>
-                <h2>Statistics</h2>
-            
-            {
-              <ul>       
-                  <li>Good: {this.state.good}</li>
-                  <li>Neutral: {this.state.neutral}</li>
-                  <li>Bad: {this.state.bad}</li>
-                  <li>Total: {this.countTotalFeedback()}</li>
-                  <li>Positive percentage: {this.countPositiveFeedbackPercentage()}%</li>     
-              </ul>
-            }
+            <h1>Please leave feedback</h1>
+            <FeedbackOptions options={countGoodFeedback, countNeutralFeedback,countBadFeedback} onLeaveFeedback={2}/>                
+            <h2>Statistics</h2>
+            <Statistics
+              good={this.state.good}
+              neutral={this.state.neutral}
+              bad={this.state.bad}
+              total={this.countTotalFeedback()}
+              positivePercentage={this.countPositiveFeedbackPercentage()}/>          
             </div>
         ) 
     };
 }
-// function App() {
-//   return (
-//     <div>
-//       <Feedback/>
-
-//     </div>
-//   )
-// }
 
 export default App;

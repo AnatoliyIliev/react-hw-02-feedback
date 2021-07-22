@@ -1,10 +1,11 @@
-// import React, {Component} from "react";
-// import styles from './FeedbackOptions.module.scss';
+import styles from '../FeedbackOptions/FeedbackOptions.module.scss'
+const FeedbackOptions = ({options, onLeaveFeedback}) => (
+    <div>
+        <button className={styles.button} type="button" onClick={options.countGoodFeedback}> Good</button>
+        <button className={styles.button} type="button" onClick={options.countNeutralFeedback}> Neutral</button>
+        <button className={styles.button} type="button" onClick={options.countBadFeedback}> Bad</button>
+    </div>
+)
 
-// class FeedbackOptions extends Component {
-
-    
-// }
-
-// export default FeedbackOptions;
+export default FeedbackOptions;
 
