@@ -19,8 +19,8 @@ class App extends Component {
   };
 
   leaveFeedback = (option) => {
-    this.setState(() => ({        
-        [option]: this.state[option] + 1,
+    this.setState((prevState) => ({        
+        [option]: prevState[option] + 1,
       })
     )
   }  
@@ -33,7 +33,7 @@ class App extends Component {
 
   countPositiveFeedbackPercentage = () => {
       const { good } = this.state;
-      let percentage = Math.floor(( good / this.countTotalFeedback()) * 100);  
+      let percentage = Math.ceil(( good / this.countTotalFeedback()) * 100);  
       return percentage;
   };  
       
